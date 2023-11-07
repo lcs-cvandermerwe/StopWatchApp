@@ -11,7 +11,7 @@ import SwiftUI
 struct StopWatchAppApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
+            TabView(selection: Binding.constant(3)) {
                 
                 Text("World Clock")
                     .tabItem {
